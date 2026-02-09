@@ -1,0 +1,63 @@
+api:
+  base_url: https://johntogo.navusoft.net
+  runquery_endpoint: /rest/external/navu/runquery
+  sessionId: "External NkM3MzdCQ0ItQzNFNC00RDk5LUI2MEItQzdCRUY1MkEyMzAyOjEwNDA="
+
+snowflake:
+  user: DTEchnician
+  account: CTYLHGR-EWC26814
+  warehouse: COMPUTE_WH
+  database: DB_LANDING_NAVUSOFT
+  role: ACCOUNTADMIN
+  private_key_path: secrets/snowflake_key.pem
+
+defaults:
+  top_count: 10000
+
+entities:
+  - name: v_query_workorder
+    columns:
+  - name: v_query_account_and_site
+    columns:
+  - name: v_query_active_services
+    columns:
+  - name: v_query_active_services_charge_rates
+    columns:
+  - name: v_query_active_services_tiered_pricing
+    columns:
+  - name: v_query_workorder_label
+    columns:
+  - name: v_query_workordercharges
+    columns:
+  - name: v_query_ar_history
+    columns:
+  - name: v_query_billbatchsummary
+    columns:
+  - name: v_query_cancellation_request
+    columns:
+  - name: v_query_contactinformation
+    columns:
+  - name: v_query_currentaging
+    columns:
+  - name: v_query_customeractivity
+    columns:
+  - name: v_query_daily_route_productivity
+    columns:
+  - name: v_query_disposal_records
+    columns:
+  - name: v_query_franchise_fees_billed_detail
+    columns:
+  - name: v_query_manifestconsolidationbatch
+    columns:
+  - name: v_query_monthly_route_productivity
+    columns:
+  - name: v_query_revenue
+    columns:
+  - name: v_query_site_contract_status
+    columns:
+  - name: v_query_siteservicehistory
+    columns:
+  - name: v_query_task
+    columns:
+  - name: v_query_tax_details
+    columns:
